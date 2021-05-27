@@ -60,6 +60,18 @@ public class MainActivity extends AppCompatActivity {
             return true;  //menu item successfully handled
         }
     }
+        else if(wordClicked.equalsIgnoreCase("bye")){
+            if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
+                //code for action
+                tvTranslatedText2.setText("Bye");
+                return true; //menu item successfully handled
+            } else if (item.getItemId() == 1) { //check if the selected menu item ID is 1
+                //code for action
+                tvTranslatedText2.setText("Addio");
+                return true;  //menu item successfully handled
+            }
+        }
+
         return super.onContextItemSelected(item); //pass menu item to the superclass implementation
     }
 
